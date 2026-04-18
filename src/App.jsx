@@ -11,7 +11,7 @@ function App() {
 
       <Routes>
         {/* Home Page */}
-        <Route path="main.js" element={
+        <Route path="/" element={
           <div>
             <h1>Welcome to the Site</h1>
             <p>This is the content your teammate is building.</p>
