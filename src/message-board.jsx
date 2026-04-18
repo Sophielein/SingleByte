@@ -1,5 +1,5 @@
 //IMPORTS
-import { Server } from "socket.io";
+import { io } from "socket.io-client";
 
 function MessageBoard() {
   return (
