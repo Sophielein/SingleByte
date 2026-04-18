@@ -1,28 +1,63 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SupportPage from './message-board.jsx';
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./Home";
+import MessageBoard from "./message-board";
+import Connect from "./connect";
+import Ressources from "./ressources";
 
 function App() {
   return (
-    <BrowserRouter>
-      {/* Anything written OUTSIDE <Routes> shows up on EVERY page (like a Header) */}
+    <div>
       <nav>
-        <a href="/">Home</a> | <a href="/message-board">Message Board</a>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/message-board">Message Board</Link>
+          </li>
+          <li>
+            <Link to="/connect">Connect</Link>
+          </li>
+          <li>
+            <Link to="/ressources">Ressources</Link>
+          </li>
+        </ul>
       </nav>
 
       <Routes>
-        {/* Home Page */}
-        <Route path="/" element={
-          <div>
-            <h1>Welcome to the Site</h1>
-            <p>This is the content your teammate is building.</p>
-          </div>
-        } />
-
-        {/* Your Page */}
-        <Route path="/message-board" element={<SupportPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/message-board" element={<MessageBoard />} />
+        <Route path="/connect" element={<Connect />} />
+        <Route path="/ressources" element={<Ressources />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
 
 export default App;
+
+// import { Routes, Route, Link } from "react-router-dom";
+// import MessageBoard from "./message-board";
+
+// function Home() {
+//   return <h1>Home Page</h1>;
+// }
+
+// function App() {
+//   return (
+//     <div>
+//       <nav>
+//         <Link to="/">Home</Link>
+//         {" | "}
+//         <Link to="/message-board">Message Board</Link>
+//       </nav>
+
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/message-board" element={<MessageBoard />} />
+//       </Routes>
+//     </div>
+//   );
+// }
+
+// export default App;

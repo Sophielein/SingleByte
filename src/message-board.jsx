@@ -1,12 +1,13 @@
 //IMPORTS
 import { Server } from "socket.io";
 
-function SupportPage() {
+function MessageBoard() {
   return (
     <div>
-      
+      <h1>Message Board</h1>
+      <p>This is the message board page.</p>
     </div>
   );
 }
 
-export default SupportPage;
+export default MessageBoard;
