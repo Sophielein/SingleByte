@@ -3,10 +3,11 @@ import Home from "./Home";
 import MessageBoard from "./message-board";
 import Connect from "./connect";
 import Ressources from "./ressources";
+import './style.css';
 
 function App() {
   return (
-    <div>
+    <div align: center >
       <nav>
         <ul>
           <li>
