@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Home from "./Home";
+import Home from "./home";
 import MessageBoard from "./message-board";
 import Connect from "./connect";
 import Ressources from "./ressources";
@@ -7,8 +7,9 @@ import './style.css';
 
 function App() {
   return (
-    <div align: center >
-      <nav>
+    <div>
+    <div>
+      <nav className="navbar">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -24,13 +25,15 @@ function App() {
           </li>
         </ul>
       </nav>
-
+    </div>
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/message-board" element={<MessageBoard />} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/ressources" element={<Ressources />} />
       </Routes>
+    </div>
     </div>
   );
 }

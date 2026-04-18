@@ -6,23 +6,37 @@
 }
 
 body {
-    margin: 0;
-    font-family: var(--font);
-    background-color: #ffffff; /* fixed */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0;
+  font-family: var(--font);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /* remove align-items: center */
+}
+
+.navbar {
+  width: 100%;  /* 100% is enough now */
+  background-color: var(--colour1);
+  border-bottom: 2px solid var(--colour1);
+  display: flex;
+  font-size: 15pt;
+  justify-content: center;
+}
+
+.content {
+  width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
-    color: var(--colour1);
-    margin-top: 40px;
-    text-align: center;
-    font-size: 32pt;
-    border: 2px solid var(--colour1);
-    border-radius: 8px;
-    padding: 8px;
-    width: 800px;
+  color: var(--colour1);
+  margin: 40px auto;  /* auto left/right centers it */
+  text-align: center;
+  font-size: 32pt;
+  border: 2px solid var(--colour1);
+  border-radius: 8px;
+  padding: 8px;
+  width: 800px;
 }
 
 input {
@@ -62,11 +76,11 @@ ul {
 li a {
     display: block;
     padding: 10px 16px;
-    color: var(--colour1);
+    background-color: var(--colour1);
     text-decoration: none;
     border: 2px solid var(--colour1);
     border-radius: 8px;
-    background-color: var(--colour2);
+    color: var(--colour2);
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
 }

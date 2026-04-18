@@ -1,6 +1,6 @@
 function Ressources() {
     return (
-      <div>
+      <div className="content">
         <h1>Ressources</h1>
         <p>This is the ressources page.</p>
       </div>
