@@ -69,12 +69,13 @@ li a {
     border-radius: 8px;
     background-color: #ffffff;
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
 }
 
 li a:hover {
     background-color: #555;
     color: white;
+    scale: 1.1;
     animation: tilt 0.6s ease-in-out forwards;
 }
 
