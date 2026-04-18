@@ -1,6 +1,6 @@
 :root {
-    --colour1: rgb(0, 0, 0);
-    --colour2: rgb(215, 131, 211);
+    --colour1: rgb(208, 85, 85);
+    --colour2: rgb(255, 255, 255);
     --colour3: rgb(215, 131, 211);
     --font: "Vollkorn", Lexend;
 }
@@ -63,11 +63,11 @@ ul {
 li a {
     display: block;
     padding: 10px 16px;
-    color: rgb(0, 0, 0);
+    color: var(--colour1);
     text-decoration: none;
     border: 2px solid var(--colour1);
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: var(--colour2);
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
 }
