@@ -1,5 +1,7 @@
 :root {
-    --colour1: rgb(215, 131, 211);
+    --colour1: rgb(208, 85, 85);
+    --colour2: rgb(255, 255, 255);
+    --colour3: rgb(215, 131, 211);
     --font: "Vollkorn", Lexend;
 }
 
@@ -61,25 +63,30 @@ ul {
 li a {
     display: block;
     padding: 10px 16px;
-    color: black;
+    color: var(--colour1);
     text-decoration: none;
-    border-radius: 6px;
-    background-color: #f1f1f1;
+    border: 2px solid var(--colour1);
+    border-radius: 8px;
+    background-color: var(--colour2);
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
 }
 
 li a:hover {
     background-color: #555;
     color: white;
-    animation: tilt 0.8s ease-in-out forwards;
+    scale: 1.1;
+    animation: tilt 0.6s ease-in-out forwards;
 }
 
 @keyframes tilt {
   0% {
     transform: rotate(0deg);
   }
-  50% {
+  33% {
+    transform: rotate(-3deg);
+  }
+  66% {
     transform: rotate(3deg);
   }
   100% {
