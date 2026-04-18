@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", serif;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+
+  --color-bg-natural: #f7f3ed;
+  --color-card-natural: #ffffff;
+  --color-accent-green: #5a5a40;
+  --color-accent-terra: #d67b5a;
+  --color-accent-sand: #e8b454;
+  --color-text-main: #2c2c2c;
+  --color-text-muted: #6e6e6e;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-natural text-text-main font-sans;
+    width: 100%;
+    min-height: 50vh;
+  }
+  
+  h1, h2, h3, h4, .serif {
+    @apply font-serif;
+  }
+}
+
+.card-container {
+  perspective: 1000px;
+}
