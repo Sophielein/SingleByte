@@ -1,0 +1,75 @@
+:root {
+    --colour1: rgb(215, 131, 211);
+    --font: "Vollkorn", Lexend;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    background-color: #ffffff; /* fixed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--colour1);
+    margin-top: 40px;
+    text-align: center;
+    font-size: 32pt;
+    border: 2px solid var(--colour1);
+    border-radius: 8px;
+    padding: 8px;
+    width: 800px;
+}
+
+input {
+    border: 2px solid var(--colour1);
+    border-radius: 8px;
+    font-family: var(--font);
+    padding: 8px;
+    margin-bottom: 10pt;
+    outline: none;
+    transition: padding 0.3s ease;
+}
+
+input:focus {
+    padding: 12px; /* 50px was way too aggressive */
+}
+
+button {
+    border: 2px solid var(--colour1);
+    border-radius: 4px;
+    font-family: var(--font);
+    background-color: white;
+    color: var(--colour1);
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 200px;
+    background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li a {
+    display: block;
+    padding: 10px 16px;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
